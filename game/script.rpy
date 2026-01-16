@@ -18,7 +18,7 @@ label start:
 
     show Penny happy
 
-    e "I can't wait to get hit by a bus"
+    e "I can't wait to get hit by a bus today"
 
     show Penny blush
 
