@@ -4,7 +4,7 @@
 # name of the character.
 
 define e = Character("VIU MC Kun")
-
+define p = Character("Penny")
 
 # The game starts here.
 
@@ -18,15 +18,18 @@ label start:
 
     show Penny happy
 
-    e "I can't wait to get hit by a bus today"
+    p "I can't wait to get hit by a bus today"
 
     show Penny blush
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    p "Once you add a story, pictures, and music, you can release it to the world!"
 
     show Penny base
 
     e "meow meow"
-    # This ends the game.
+
+    e "second text same image"
+    
+
 
     return
