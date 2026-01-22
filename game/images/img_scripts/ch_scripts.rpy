@@ -1,8 +1,5 @@
 # Penny Ch Images
 
-image Penny happy = "images/chs/PENNY POLENDINA/Penny Happy.png"
-image Penny cry = "images/chs/PENNY POLENDINA/Penny Cry.png"
-image Penny blush = "images/chs/PENNY POLENDINA/Penny Blush.png"
-image Penny blank = "images/chs/PENNY POLENDINA/Penny Blank.png"
-image Penny base = "images/chs/PENNY POLENDINA/Penny Base.png"
-
+image MainChar Temp = "images/chs/POC-Concepts/MC-POC1.png"
+image Grandma Temp = "images/chs/POC-Concepts/GMA-POC1.jpg"
+image Brother Temp = "images/chs/POC-Concepts/LBRO-POC1.jpg"

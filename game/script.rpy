@@ -3,33 +3,41 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("VIU MC Kun")
-define p = Character("Penny")
+define oba = Character("おばあさん", color="#c8ffc8")
+define mc = Character("Main Character", color="#c8ffc8")
 
+define slow_transition = Dissolve(2.0)
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    pause 2.0
+    scene bg blackscreen with slow_transition
 
-    scene bg room
+    mc '...'
 
-    show Penny happy
+    mc '...'
 
-    p "I can't wait to get hit by a bus today"
+    mc '...'
 
-    show Penny blush
+    scene bg bedroom with slow_transition
 
-    p "Once you add a story, pictures, and music, you can release it to the world!"
+    show Grandma Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
 
-    show Penny base
+    oba 'まだ寝ている？、もうすぐご飯を作るよ、早く起きなさい！'
 
-    e "meow meow"
+    scene bg kitchen with slow_transition
 
-    e "second text same image"
-    
+    show Grandma Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
 
+    oba '聞いた?、どうやらVIUで今後二週間新しいお祭りを開催するって、知っていた?'
+
+    show MainChar Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0  
+
+    show Grandma Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0   
 
     return
