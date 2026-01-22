@@ -6,13 +6,12 @@
 define oba = Character("おばあさん", color="#c8ffc8")
 define mc = Character("Main Character", color="#c8ffc8")
 
-define slow_transition = Dissolve(2.0)
 # The game starts here.
 
 label start:
 
-    pause 2.0
-    scene bg blackscreen with slow_transition
+    pause 2.0 
+    scene bg blackscreen with dissolve(4.0)
 
     mc '...'
 
@@ -20,15 +19,16 @@ label start:
 
     mc '...'
 
-    scene bg bedroom with slow_transition
-
+    scene bg bedroom with Dissolve(4.0)
+    pause 0.5
     show Grandma Temp:
         zoom 0.5 xalign 0.0 yalign 1.0
 
     oba 'まだ寝ている？、もうすぐご飯を作るよ、早く起きなさい！'
 
-    scene bg kitchen with slow_transition
-
+    pause 2.0
+    scene bg kitchen with Dissolve(6.0)
+    pause 0.5
     show Grandma Temp:
         zoom 0.5 xalign 0.0 yalign 1.0
 
