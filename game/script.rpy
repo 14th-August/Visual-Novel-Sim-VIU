@@ -86,6 +86,42 @@ label start:
         zoom 0.5 xalign 0.0 yalign 1.0
     
     imouto 'おい！お兄ちゃん！歯ブラシがない、どうして？！'
+    imouto 'どこに置いたの？！'
+
+    show MainChar Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0 
+
+    menu:
+        "うそ！なんで私のせいにするの？":
+            imouto 'だって、君が歯ブラシをいつもう越してるから'
+        "あんまり覚えてないな。。。":
+            imouto 'もっと考えてなんか思い出して！'
+        "部屋にわすれちゃったかも。。。":
+            imouto '…'
+    
+    imouto 'ああ、もう！お兄ちゃんはいつもそうだ！'
+    imouto 'もう、いい！私が自分で探すから！'
+    imouto 'ね、おばあちゃん、ごはんを作っておいた？'
+
+    show Grandma Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0 
+
+    oba '食べるだけではなく，テーブルで座ってくれませんか'
+    imouto 'はい！'
+
+    scene bg table with character_fade
+
+    show Grandma Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0 
+
+    oba 'さあ、食べましょう！'
+
+    show Brother Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
+
+    imouto 'いただきます！'
+    
+    oba 'いただきます！'
 
     return
 
