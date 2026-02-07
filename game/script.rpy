@@ -120,8 +120,26 @@ label start:
         zoom 0.5 xalign 0.0 yalign 1.0
 
     imouto 'いただきます！'
-    
+
     oba 'いただきます！'
+
+    scene bg frontdoor with character_fade
+
+    show Grandma Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0
+
+    oba '今回は教科書を忘れてはいけなさい,それが大切だよ！'
+
+    show Brother Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
+
+    imouto 'もう注意されたおばあちゃん！'
+    oba 'まあ、いいでしょう。さあ、気を付けてね'
+    imouto '行ってきます！'
+    oba '行ってらっしゃい！'
+
+
+
 
     return
 
