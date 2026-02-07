@@ -164,7 +164,7 @@ label start:
 
     scene bg truckkun with character_fade
 
-    otouto 'There is a huge fucking truck LOOOK OUT ONIIICHaN !!!'
+    otouto '危ない！気を付けて！'
     
     return
 
