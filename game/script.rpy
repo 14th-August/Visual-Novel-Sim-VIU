@@ -6,7 +6,7 @@
 define oba = Character("おばあさん", color="#c8ffc8")
 define mc = Character("私", color="#c8ffc8")
 define obaSelf = Character(None, kind=oba, what_italic=True) 
-define imouto = Character("妹", color="#3bff3b")
+define otouto = Character("弟", color="#3bff3b")
 
 define character_fade = Dissolve(4.0)
 
@@ -77,7 +77,7 @@ label start:
     oba '最近のことを彼に伝えます、興味がいつもあるような。'
     oba 'ところで、弟がもう起きた？おなかがすいたでしょ。 '
 
-    imouto 'おなかすいた！'
+    otouto 'おなかすいた！'
 
     pause 2.0 
     scene bg livingroom with character_fade
@@ -85,29 +85,29 @@ label start:
     show Brother Temp:
         zoom 0.5 xalign 0.0 yalign 1.0
     
-    imouto 'おい！お兄ちゃん！歯ブラシがない、どうして？！'
-    imouto 'どこに置いたの？！'
+    otouto 'おい！お兄ちゃん！歯ブラシがない、どうして？！'
+    otouto 'どこに置いたの？！'
 
     show MainChar Temp:
         zoom 0.5 xalign 1.0 yalign 1.0 
 
     menu:
         "うそ！なんで私のせいにするの？":
-            imouto 'だって、君が歯ブラシをいつもう越してるから'
+            otouto 'だって、君が歯ブラシをいつもう越してるから'
         "あんまり覚えてないな。。。":
-            imouto 'もっと考えてなんか思い出して！'
+            otouto 'もっと考えてなんか思い出して！'
         "部屋にわすれちゃったかも。。。":
-            imouto '…'
+            otouto '…'
     
-    imouto 'ああ、もう！お兄ちゃんはいつもそうだ！'
-    imouto 'もう、いい！私が自分で探すから！'
-    imouto 'ね、おばあちゃん、ごはんを作っておいた？'
+    otouto 'ああ、もう！お兄ちゃんはいつもそうだ！'
+    otouto 'もう、いい！私が自分で探すから！'
+    otouto 'ね、おばあちゃん、ごはんを作っておいた？'
 
     show Grandma Temp:
         zoom 0.5 xalign 1.0 yalign 1.0 
 
     oba '食べるだけではなく，テーブルで座ってくれませんか'
-    imouto 'はい！'
+    otouto 'はい！'
 
     scene bg table with character_fade
 
@@ -119,7 +119,7 @@ label start:
     show Brother Temp:
         zoom 0.5 xalign 0.0 yalign 1.0
 
-    imouto 'いただきます！'
+    otouto 'いただきます！'
 
     oba 'いただきます！'
 
@@ -133,14 +133,39 @@ label start:
     show Brother Temp:
         zoom 0.5 xalign 0.0 yalign 1.0
 
-    imouto 'もう注意されたおばあちゃん！'
+    otouto 'もう注意されたおばあちゃん！'
     oba 'まあ、いいでしょう。さあ、気を付けてね'
-    imouto '行ってきます！'
+    otouto '行ってきます！'
     oba '行ってらっしゃい！'
 
+    scene bg frontdoor with character_fade
 
+    oba 'ところで、弟が世話してね'
 
+    show MainChar Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0 
 
+    menu:
+
+        "うん、わかった！":
+            obaSelf 'ニャンニャン'
+        "もちろん":
+            obaSelf 'ニャンニャン'
+        "さあ。。":
+            obaSelf 'ニャンニャン'
+
+    scene bg road with character_fade
+
+    show Brother Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
+
+    otouto 'お兄ちゃん、待って！'
+    otouto 'あの、さっきはごめんね！'
+
+    scene bg truckkun with character_fade
+
+    otouto 'There is a huge fucking truck LOOOK OUT ONIIICHaN !!!'
+    
     return
 
 
