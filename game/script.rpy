@@ -7,6 +7,9 @@ define oba = Character("おばあさん", color="#c8ffc8")
 define mc = Character("私", color="#c8ffc8")
 define obaSelf = Character(None, kind=oba, what_italic=True) 
 define otouto = Character("弟", color="#3bff3b")
+define chad = Character("チャド", color="#ff3bb460")
+define prep = Character("プレップ", color="#e76eff")
+define delin = Character("デリンキント", color="#ff9d1c")
 
 define character_fade = Dissolve(4.0)
 
@@ -164,7 +167,26 @@ label start:
 
     scene bg truckkun with character_fade
 
+    show Brother Temp:
+        zoom 0.5 xalign 0.0 yalign 1.0
+
     otouto '危ない！気を付けて！'
+
+    show Love1 Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0
+
+    chad 'おい！お兄ちゃん！'
+    otouto 'チャド！'
+
+    show Love2 Temp:
+        zoom 0.5 xalign 0.5 yalign 1.0
+
+    prep 'おい、プレップもいるぞ！'
+
+    show Love4 Temp:
+        zoom 0.5 xalign 1.0 yalign 1.0
+
+    delin 'デリンキントもいるぞ！'
     
     return
 
